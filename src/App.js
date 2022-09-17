@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import BarGraphSimple from "./BarGraphSimple";
+import BAR_GRAPH_SIMPLE_DATA from "./BarGraphSimpleData";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Bar Graph Simple Example</h1>
+        <BarGraphSimple data={BAR_GRAPH_SIMPLE_DATA} />
       </header>
     </div>
   );
-}
+};
 
 export default App;
